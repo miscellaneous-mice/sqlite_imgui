@@ -32,8 +32,6 @@ target_include_directories(example_sdl3_metal PRIVATE
     ${IMGUI_DIR}/backends
     ${SDL3_INCLUDE_DIRS}
     ${SQLITE_DIR}
-    /usr/local/include
-    /opt/local/include
 )
 
 target_compile_options(example_sdl3_metal PRIVATE -g3 -O0)
