@@ -1,3 +1,8 @@
+# Update the submodules
+```
+git submodule update --init --recursive
+```
+
 # Build configuration
 ```
 mkdir build && cd build
