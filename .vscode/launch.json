@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Local Debug x86 Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/example_sdl3_metal",
+            // "args": ["${input:packageName}", "30", "1"],
+            // "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            // "environment": [],
+            // "externalConsole": false,
+            // "MIMode": "lldb",
+            // "miDebuggerPath": "/usr/bin/lldb",
+            // "setupCommands": [
+            //     {
+            //         "description": "Enable pretty-printing for gdb",
+            //         "text": "-enable-pretty-printing",
+            //         "ignoreFailures": true
+            //     }
+            // ],
+            "preLaunchTask": "cmake: build"
+        },
+    ],
+    "inputs": [
+        {
+            "id": "packageName",
+            "type": "promptString",
+            "description": "Enter the package name to install",
+            "default": "UCPackage.sedp"
+        },
+    ]
+}
+
+
